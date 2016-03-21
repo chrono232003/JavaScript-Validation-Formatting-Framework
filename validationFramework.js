@@ -10,10 +10,6 @@ var expr = {
     pobox: /("(post\s*(office)?)?\s*b(?:[o0]x)?\s*[#-]?\s*(\d+)?"|"[\w\s]*?p(ost)?\s*[.-]?\s*o?\s*\.?\s*b(?:[o0]x)?\.?\s*(\d+)?"|"\s*number\s*\d+")|^(?:Post(?:al)? (?:Office )?|P[. ]?O\.? )?b(?:[o0]x)?|b[o0]x\b/gim
 };
 
-var format = {
-	
-};
-
 function exprTest(input, regExp) {
 	var regex = new RegExp(regExp);
   return regex.test(input);	
